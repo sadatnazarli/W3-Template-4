@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leftside {
+  background-color: white;
+  border-right: 1px solid #e0e0e0;
+  height: 100vh;
+  margin-left: 200px;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  img {
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  span {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
