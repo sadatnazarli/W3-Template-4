@@ -131,6 +131,7 @@ hr {
   margin-top: 10px;
 }
 .ourwork {
+  height: 100;
   margin-top: 10px;
   width: 100%;
   padding: 15px;
@@ -161,8 +162,8 @@ hr {
   object-fit: cover;
 }
 
-.sample.sample-texts {
-  background: black !important;
+.sample {
+  background: white;
   height: 300px;
   padding: 10px;
 
@@ -171,11 +172,53 @@ hr {
   justify-content: space-around;
 }
 
-.sample.sample-texts h4 {
+.sample-texts h4 {
+  color: black;
   margin-top: 5px;
   color: dark;
 }
 
-.sample.sample-texts p {
-  color: #111;
+.sample-texts p {
+  color: black;
+}
+.sample-texts {
+  background-color: white;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.pagination {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.two-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  img {
+    width: 49%;
+    height: 300px;
+    object-fit: cover;
+  }
 }
