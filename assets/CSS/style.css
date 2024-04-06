@@ -130,24 +130,17 @@
 
 hr {
   border: 4px solid lightgray;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .ourwork {
-  height: 100;
-  margin-top: 10px;
+  height: 100%;
+  margin-top: 15px;
   width: 100%;
-  /* padding: 15px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-}
-
-.ourwork h1 {
-  grid-column: 1 / -1;
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: white;
+  /* padding: 15px; */
 }
 
 .ourwork p {
@@ -157,28 +150,28 @@ hr {
 
 .sample {
   background: white;
-  height: 300px;
-  padding: 10px;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .sample img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
 }
 
 .sample-texts h4 {
+  margin: 10px;
   color: black;
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
 .sample-texts p {
+  margin: 10px;
   color: black;
 }
-
 .pagination {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -189,6 +182,7 @@ hr {
 .pagination a {
   color: black;
   float: left;
+  margin-top: 20px;
   padding: 8px 16px;
   text-decoration: none;
 }
@@ -240,14 +234,14 @@ hr {
 
 .skill-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
 .skill-name {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: lighter;
+  margin-bottom: 10px;
 }
 
 .skill-bar {
@@ -258,7 +252,13 @@ hr {
 
 .skill-percentage {
   height: 100%;
-  background-color: #4caf50;
+  background-color: gray;
+
+  span {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
 }
 
 .skill-percentage-text {
@@ -269,10 +269,10 @@ hr {
 .download-resume {
   display: block;
   width: 20%;
-  background-color: #4caf50;
+  background-color: gray;
   color: white;
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 30px;
 }
