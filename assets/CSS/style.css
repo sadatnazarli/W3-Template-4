@@ -13,27 +13,30 @@
   position: fixed;
   top: 0;
   left: 0;
-
-  img {
-    width: 40%;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 30px;
-    border-radius: 7px;
-  }
-  h2 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-  span {
-    font-size: 15px;
-    font-weight: 500;
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
 }
+
+.leftside img {
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+}
+
+.leftside h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.leftside span {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
 .icons {
   display: flex;
   flex-direction: column;
@@ -41,55 +44,53 @@
   margin-right: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
-  :hover {
-    background-color: #f5f5f5;
-    border-radius: 10px;
-  }
-
-  .icon {
-    display: flex;
-
-    :hover {
-      cursor: pointer;
-    }
-
-    span {
-      /* margin: 15px; */
-      /* font-size: 15px; */
-      font-weight: 600;
-      /* margin-top: 18px; */
-    }
-  }
 }
+
+.icons .icon:hover {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.icons .icon {
+  display: flex;
+}
+
+.icons .icon:hover {
+  cursor: pointer;
+}
+
+.icons .icon span {
+  font-weight: 600;
+}
+
 .socialmedia {
   display: flex;
   justify-content: space-between;
   width: 40%;
-
   margin-left: 15px;
+}
 
-  i {
-    font-size: 1rem;
-    cursor: pointer;
-  }
+.socialmedia i {
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .rightside {
   margin-left: 21%;
-  /* padding: 20px;
-  padding-top: 50px;
-  padding-bottom: 50px; */
   height: 100vh;
   width: 78%;
   padding: 10px;
   padding-left: 20px;
 }
+
 .header {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  h1 {
-    margin-bottom: 40px;
-  }
 }
+
+.header h1 {
+  margin-bottom: 40px;
+}
+
 .filter {
   display: flex;
   align-items: center;
@@ -126,10 +127,12 @@
 .h-button button.active {
   font-weight: bold;
 }
+
 hr {
   border: 4px solid lightgray;
   margin-top: 10px;
 }
+
 .ourwork {
   height: 100;
   margin-top: 10px;
@@ -153,7 +156,12 @@ hr {
 }
 
 .sample {
-  text-align: start;
+  background: white;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .sample img {
@@ -162,32 +170,15 @@ hr {
   object-fit: cover;
 }
 
-.sample {
-  background: white;
-  height: 300px;
-  padding: 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .sample-texts h4 {
   color: black;
   margin-top: 5px;
-  color: dark;
 }
 
 .sample-texts p {
   color: black;
 }
-.sample-texts {
-  background-color: white;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+
 .pagination {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -215,10 +206,25 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
 
-  img {
-    width: 49%;
-    height: 300px;
-    object-fit: cover;
-  }
+.two-images img {
+  width: 49%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.context {
+  padding-top: 40px;
+}
+
+.context h3 {
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.context p {
+  font-family: Raleway, sans-serif;
+  margin-bottom: 20px;
+  text-align: left;
 }
